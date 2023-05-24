@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+<style>
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+td, th{
+	border: 2px solid #dddddd;
+	text-align: left;
+	padding; 8px;
+}
+tr: nth-child(even){
+	background-color: #dddddd;
+}
+</style>
+<h1>Scan {{ scan_num }}</h1>
+<body>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Date</th>
+		<th>Image</th>
+	</tr>
+	{% for img_num, img_src, date_m in files %}
+	<tr>
+		<td>{{img_num}}</td>
+		<td>{{date_m}}</td>
+		<td><a href='/home/scan{{ scan_num }}/image{{ img_num }}'><img src="{% static img_src %}" height="200" width="200"></a>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
+

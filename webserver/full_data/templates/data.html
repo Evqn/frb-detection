@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+<style>
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+td, th{
+	border: 2px solid #dddddd;
+	text-align: left;
+	padding; 8px;
+}
+tr: nth-child(even){
+	background-color: #dddddd;
+}
+</style>
+<h1>JPL FRB PipeLine</h1>
+<body>
+<table>
+	<tr>
+		<th>Scan</th>
+		<th>Date</th>
+		<th>Data</th>
+	</tr>
+	{% for scan_num, date_m in files %}
+	<tr>
+		<td>{{scan_num}}
+		<td>{{date_m}}</td>
+		<td><a href= '/home/scan{{scan_num}}/'>data</a></td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
+
