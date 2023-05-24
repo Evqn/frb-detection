@@ -40,6 +40,12 @@ We employ the data plotting package Your to visualize the pulse candidates, gene
 
 We use Apache to create a local web server, with Django as the web framework, to display the pipeline results in real-time. As each chunk finishes processing, the web server displays the chunk ID, time, and a link for detailed statistics. If there are any pulse candidates, the statistics link displays a page with previews for each candidate of the corresponding chunk.
 
+## Usage
+The pipeline consists of three main scripts: 
+
+- `data_reduce_params_bb.py`: This is the parameters file. Set the `indirectory` and `outdirectory` here.
+- `frb_detect.py`: This is the main script that drives the pipeline.
+- `sp_cand_plots.py`: This is the plotting script used for visualizing the pulse candidates.
 
 ## Figures and Tables
 
