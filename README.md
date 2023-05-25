@@ -47,6 +47,6 @@ The pipeline consists of three main scripts:
 - `frb_detect.py`: This is the main script that drives the pipeline.
 - `sp_cand_plots.py`: This is the plotting script used for visualizing the pulse candidates.
 
-## Figures and Tables
+## Figures
 
 
