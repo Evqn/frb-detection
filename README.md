@@ -48,5 +48,15 @@ The pipeline consists of three main scripts:
 - `sp_cand_plots.py`: This is the plotting script used for visualizing the pulse candidates.
 
 ## Figures
+![Flux vs. Time](imgs/flux_v_time.png)
+Flux vs. Time plot of a FRB candidate from M81 pulsar generated with your plotting software
+
+![Freq vs. Time](imgs/freq_v_time.png)
+Frequency vs. Time plot
+
+![DM vs. Time](imgs/dm_v_time.png)
+Dispersion Measure (DM) vs. Time plot
+
+
 
 
